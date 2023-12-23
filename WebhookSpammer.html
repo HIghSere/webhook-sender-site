@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HimaIn tools</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        input,
+        button {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Webhook Spammer</h1>
+
+    <input type="text" id="webhook" placeholder="ウェブフックURLを入力">
+    <br>
+
+    <input type="text" id="message" placeholder="メッセージを入力">
+    <br>
+
+    <input type="number" id="interval" placeholder="送信間隔(ミリ秒)">
+    <br>
+
+    <input type="number" id="count" placeholder="送信回数">
+    <br>
+
+    <button onclick="sendMessage()">開始</button>
+
+    <div id="log-container"></div>
+
+    <script src="WebhookSpammer.js"></script>
+</body>
+
+</html>
